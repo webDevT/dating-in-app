@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dating In Apps</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<style>
+	/* Контейнер слайдера */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 40px; /* Для удобства размещения тултипа */
+  margin-top: 12px;
+}
+
+/* Слайдер */
+.slider {
+  width: 100%;
+  height: 5px;
+  background: #C8C8D3; /* Фон слайдера */
+  border-radius: 2.5px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Заполненная часть слайдера */
+.slider-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: #F55B47; /* Цвет заполненной части */
+  border-radius: 2.5px;
+  z-index: 0;
+}
+
+/* Бегунок */
+.slider-thumb {
+  width: 21px;
+  height: 21px;
+  background: #F55B47; /* Цвет бегунка */
+  border: 3px solid #F0F0F5;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px; /* Чтобы бегунок не перекрывал слайдер */
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Тултип */
+.tooltip2 {
+  position: absolute;
+  bottom: -15px;
+  padding: 5px 10px;
+  background-color: #1E1E1F;
+  color: white;
+  border-radius: 11px;
+  font-size: 12px;
+  display: inline-block;
+  pointer-events: none;
+  min-width: 117px;
+  text-align: center;
+  font-size: 15px;
+}
+.slider-thumb::before {
+	content: '';
+	width: 7px;
+	height: 7px;
+	background: #fff;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.tooltip2::after {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: rotate(180deg);
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1E1E1F transparent transparent transparent;
+}
+</style>
+
+
+<!-- start top header -->
+<div class="top-header">
+	<div class="container-fluid">
+		Start now and get a free integration from out team
+		<a href="" class="top-header__link">Get Started</a>
+		<div class="timer"><span class="dash">—</span> 3h 32m left to join</div>
+	</div>
+	<div class="close"></div>
+</div>
+<!-- end top header -->
+
+<!-- start header -->
+<header class="header">
+	<div class="container-fluid">
+
+		<div class="logo">
+			<a href="/">
+				<img src="img/logo.svg" alt="">
+			</a>
+		</div>
+
+		<div class="menu-btn">
+			<div class="menu-btn__row"></div>
+			<div class="menu-btn__row"></div>
+			<div class="menu-btn__row"></div>
+		</div>
+
+		<div class="menu-wrapper">
+
+			<div class="menu">
+				<ul>
+
+					<li>
+						<a href="" class="sub-item">About Us</a>
+
+						<div class="sub-menu">
+							<a href="">
+								Our Philosophy
+							</a>
+							<a href="">
+								Our Mission
+							</a>
+						</div>
+
+					</li>
+
+					<li>
+						<a href="">Contact Us</a>
+					</li>
+
+				</ul>
+			</div>
+
+			<a href="" class="button">
+				Get Started
+			</a>
+
+		</div>
+
+	</div>
+</header>
+<!-- end header -->
+
+<!-- start main screen -->
+<section class="main-screen">
+	<div class="container-fluid">
+
+		<div class="main-screen__row">
+
+			<div class="main-screen__col">
+
+				<div class="main-screen__content">
+					<div class="main-screen__sub-heading">
+					<div class="main-screen__sub-heading-photos">
+						<img src="img/photo1.png" alt="">
+						<img src="img/photo2.png" alt="">
+						<img src="img/photo3.png" alt="">
+					</div>
+					Trusted by 7M+ users worldwide
+				</div>
+
+				<h1 class="main-screen__title h1">
+					Make money by 
+					<div class="h1-row">adding 
+					
+					<div class="red-text-wrapper">
+<span><img src="img/heart.svg" alt="">dating feature
+						
+						</span>
+						<div class="red-text">
+							<div>
+							Even if you only<br> have 100 installs!	
+							</div>
+							
+							<img src="img/arrow-red.svg" alt="" class="arrow-red">
+						</div>
+					</div>
+						
+					
+					</div> into your app</h1>
+					
+				
+
+				<p class="text">
+					Boost revenue by adding a dating feature. Improve your app’s retention and earn more from its features and ads!
+				</p>
+
+				<div class="buttons-wrapper">
+					<a href="" class="button button--black">
+						Get Started
+					</a>
+
+					<a href="" class="link">
+						Learn More
+					</a>
+				</div>
+			</div>
+
+				</div>
+				
+
+			
+
+			<div class="main-screen__col">
+				<div class="photo-wrapper">
+					<div class="photo-row">
+						<img src="img/m1.png" alt="" class="photo1">
+						<img src="img/m2.png" alt="" class="photo2">
+					</div>
+					<div class="photo-row">
+						<img src="img/m3.png" alt="" class="photo3">
+						<img src="img/m4.png" alt="" class="photo4">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+
+	</div>
+</section>
+<!-- end main screen -->
+
+<!-- start work section -->
+<section class="work section">
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div class="col-lg-6">
+				<div class="image-wrapper">
+					<img src="img/phone.png" alt="">
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="section-header">
+					<div class="sub-title-wrapper">
+						<div class="sub-title">
+						One SDK for Any Domain
+					</div>
+
+					<div class="icons-row">
+						<div class="icon-item">
+							<img src="img/apple.svg" alt="">
+						</div>
+						<div class="icon-item">
+							<img src="img/huawei.svg" alt="">
+						</div>
+						<div class="icon-item">
+							<img src="img/android.svg" alt="">
+						</div>
+					</div>
+
+					</div>
+
+					<h2 class="h2">
+						Works for any type of app
+					</h2>
+
+					<p class="text">Whatever your app focuses on, a dating feature can create stronger connections among your users.</p>
+
+					<div class="row">
+
+						<div class="col-6">
+
+							<div class="item">
+								<div class="item__icon-wrapper">
+									<img src="img/i1.svg" alt="">						
+								</div>
+								Fitness App
+							</div>
+
+							<div class="item">
+								<div class="item__icon-wrapper">
+									<img src="img/i2.svg" alt="">						
+								</div>
+								Social Networks
+							</div>
+
+							<div class="item">
+								<div class="item__icon-wrapper">
+									<img src="img/i3.svg" alt="">						
+								</div>
+								Cooking Apps
+							</div>
+
+						</div>
+
+						<div class="col-6">
+
+							<div class="item">
+								<div class="item__icon-wrapper">
+									<img src="img/i4.svg" alt="">						
+								</div>
+								Travel Apps
+							</div>
+
+							<div class="item">
+								<div class="item__icon-wrapper">
+									<img src="img/i5.svg" alt="">						
+								</div>
+								Wallpaper Apps
+							</div>
+
+							<div class="item">
+								<div class="item__icon-wrapper">
+									<img src="img/i6.svg" alt="">						
+								</div>
+								And more!
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="buttons-wrapper">
+						<a href="" class="button">
+							Get Started
+						</a>
+	
+						<a href="" class="link">
+							Learn More
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end work section -->
+
+<!-- start black section -->
+<section class="black-section">
+	<img src="img/illustration.png" alt="" class="bg">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="black-section__content">
+					<div class="sub-title">
+					More Than Dating
+				</div>
+
+				<h2 class="h2">
+					It’s about <span>connecting</span> with new people who share your interests
+				</h2>
+
+				<p class="text">
+					Dating isn’t just about meeting in person—it’s about building fun and meaningful connections.
+				</p>
+
+				<a href="" class="button button--red">
+					Learn More
+				</a>
+
+				
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end black section -->
+
+<!-- start calculator section -->
+<section class="calculator section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6">
+				<h2 class="h2">
+					Earning Calculator
+				</h2>
+				<p>Input your app details to estimate your earnings:</p>
+
+				<div class="calculator-sub-title">
+					Audience Location
+				</div>
+
+				<div class="radio-list">
+
+					<label for="1" class="radio-item">
+						<input type="radio" name="radio" id="1" checked>
+						<div class="radio-dot">			
+						</div>
+
+						<div class="radio-item__content">
+							<div class="radio-item__title">
+								Tier 1 
+							</div>
+
+							<p>
+								US, Canada, UK, Germany, France, Australia, Japan, South Korea, Switzerland, Netherlands
+							</p>
+
+						</div>
+					</label>
+
+					<label for="2" class="radio-item">
+						<input type="radio" name="radio" id="2">
+						<div class="radio-dot"></div>
+
+						<div class="radio-item__content">
+							<div class="radio-item__title">
+								Tier 2 
+							</div>
+
+							<p>
+								Brazil, Mexico, Turkey, Poland, South Africa, Malaysia, Thailand, Russia, Argentina, Czech Republic
+							</p>
+
+						</div>
+						
+					</label>
+
+					<label for="3" class="radio-item">
+						<input type="radio" name="radio" id="3">
+						<div class="radio-dot"></div>
+
+						<div class="radio-item__content">
+							<div class="radio-item__title">
+								Tier 3
+							</div>
+
+							<p>
+								US, Canada, UK, Germany, France, Australia, Japan, South Korea, Switzerland, Netherlands
+							</p>
+
+						</div>
+					</label>
+
+
+
+
+				</div>
+
+
+				<div class="slider-wrapper">
+					<div class="calculator-sub-title">
+					Number of Users
+				</div>
+
+				<div class="slider-container">
+					<div id="slider" class="slider">
+					  <div id="slider-fill" class="slider-fill"></div>
+					  <div id="slider-thumb" class="slider-thumb"></div>
+					</div>
+					<div id="tooltip2" class="tooltip2">5,000 users</div>
+				  </div>
+				</div>
+				
+
+			</div>
+			<div class="col-lg-6">
+				<h2 class="h2">
+					Predicted Revenue
+				</h2>
+				<p>
+					<strong>20% of users</strong> are open to connect with new people. <br>Users are willing to pay <strong>$9.99/month</strong> for this service.</p>
+
+					<div class="price-list">
+
+						<div class="price-item">
+							<div class="price-item__icon-wrapper">
+								<img src="img/pi1.svg" alt="">
+							</div>
+
+							<div class="price-item__content">
+								<div class="price-item__title">
+									Earnings in the first month
+								</div>
+								<div class="price-value">
+									$200
+								</div>
+								<div class="price-text">
+									Subscriptions and upsells
+								</div>
+							</div>
+						</div>
+
+						<div class="price-item">
+							<div class="price-item__icon-wrapper">
+								<img src="img/pi2.svg" alt="">
+							</div>
+
+							<div class="price-item__content">
+								<div class="price-item__title">
+									Recurring revenue
+								</div>
+								<div class="price-value">
+									$300
+								</div>
+								<div class="price-text">
+									Monthly renewals
+								</div>
+							</div>
+						</div>
+
+						<div class="price-item">
+							<div class="price-item__icon-wrapper">
+								<img src="img/pi3.svg" alt="">
+							</div>
+
+							<div class="price-item__content">
+								<div class="price-item__title">
+									Annual revenue
+								</div>
+								<div class="price-value price-value--red">
+									$1,800
+								</div>
+								<div class="price-text">
+									Long-term revenue in the next 12 months
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="price-item price-item--transparent">
+						<div class="price-item__icon-wrapper">
+							<img src="img/pi4.svg" alt="">
+						</div>
+
+						<div class="price-item__content">
+							<div class="price-item__title">
+								Monthly Payouts
+							</div>
+
+							<div class="price-text">
+								You get paid every month directly to your account
+							</div>
+						</div>
+					</div>
+
+					<div class="price-item price-item--transparent">
+						<div class="price-item__icon-wrapper">
+							<img src="img/pi5.svg" alt="">
+						</div>
+
+						<div class="price-item__content">
+							<div class="price-item__title">
+								Easy to Join
+							</div>
+						
+							<div class="price-text">
+								Only 100 users needed to get started
+							</div>
+						</div>
+					</div>
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end calculator section -->
+
+<!-- start how it work -->
+<section class="how-it-works">
+	<div class="container-fluid">
+		
+		<div class="section-header section-header--center">
+	
+				<div class="sub-title">
+					You’re in good company
+			</div>
+
+
+
+			<h2 class="h2">
+				How it works
+			</h2>
+
+			<p class="text">One of our largest integrations is inside Telegram Messenger, which is already generating $200K+ per month.</p>
+			</div>
+
+			<div class="how-it-works__content">
+				<img src="img/image.png" alt="" class="how-it-works__img">
+
+				<div class="red-label">
+					3.2M+ Users Already in the Network
+				</div>
+			</div>
+	</div>
+</section>
+<!-- end how it work -->
+
+<!-- start work section -->
+<section class="work section pt-0 work--2">
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div class="col-lg-6">
+				<div class="image-wrapper">
+					<img src="img/image2.png" alt="">
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="section-header section-header--left">
+			
+						<div class="sub-title">
+							We Handle It All
+					</div>
+
+
+
+					<h2 class="h2">
+						No costs on your side
+					</h2>
+
+					<p class="text">Just integrate and start earning from your users. <br>
+						We take care of everything for you:</p>
+						</div>
+
+					<div class="row">
+
+						<div class="col-12 mb">
+
+							<div class="item item--2">
+								<div class="item__icon-wrapper">
+									<img src="img/c1.svg" alt="">						
+								</div>
+
+								<div>
+									User Support
+									<div class="price-text">
+										Subscriptions and upsells
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="item item--2">
+								<div class="item__icon-wrapper">
+									<img src="img/c2.svg" alt="">						
+								</div>
+
+								<div>
+									Photo Verification
+									<div class="price-text">
+										Ensuring real and trustworthy profiles.
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="item item--2">
+								<div class="item__icon-wrapper">
+									<img src="img/c3.svg" alt="">						
+								</div>
+
+								<div>
+									Moderation
+									<div class="price-text">
+										Monitoring user interactions for a safe experience.
+							</div></div>
+							</div>
+
+							<div class="item item--2">
+								<div class="item__icon-wrapper">
+									<img src="img/c4.svg" alt="">						
+								</div>
+
+								<div>
+									Billing Management
+									<div class="price-text">
+										We process all payments seamlessly.
+									</div>
+								</div>
+								
+							</div>
+
+					
+
+					
+
+					
+
+					<p class="mt-3">
+						Focus on growing your app while we handle the rest!
+					</p>
+
+					<div class="buttons-wrapper">
+						<a href="" class="button">
+							Get Started
+								
+							</a>
+	
+						<a href="" class="link">
+							Learn More
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end work section -->
+
+<!-- start pay section -->
+<section class="work section pt-0 pay">
+	<div class="container-fluid">
+
+		<div class="row">
+
+			
+
+			<div class="col-lg-6">
+
+				<div>
+					<div class="section-header section-header--left">
+			
+						<div class="sub-title">
+							Regular Payouts
+					</div>
+
+
+
+					<h2 class="h2">
+						Proven technology
+					</h2>
+
+					<div class="text-19">
+						<p class="text semi-bold">Our dating solution is already trusted by over</p>
+					<div class="text text--row">
+						<div class="main-screen__sub-heading-photos">
+							<img src="img/photo1.png" alt="">
+							<img src="img/photo2.png" alt="">
+							<img src="img/photo3.png" alt="">
+						</div>
+						<div class="semi-bold">
+							7 million users worldwide.
+						</div>
+						
+					</div>
+
+					<p class="pay-text">
+						One of our largest integrations is inside Telegram Messenger, which is already generating <span>$200K+ per month</span>.
+					</p>
+					</div>
+					
+						</div>
+
+
+
+					<div class="buttons-wrapper">
+						<a href="" class="button button--black">
+							Get Started
+						</a>
+
+					</div>
+				</div>
+				
+					
+				</div>
+
+				<div class="col-lg-6">
+					<div class="image-wrapper image-wrapper--2">
+						<img src="img/image3.png" alt="">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end pay section -->
+
+<!-- start  integration section -->
+<section class="integration">
+	<div class="container-fluid">
+
+		<div class="section-header section-header--center">	
+			<div class="sub-title">
+				Easy Integration
+		</div>
+		<h2 class="h2">
+			Quick and Easy Setup
+		</h2>
+		<p class="text">Integration is fast and simple — it takes less than 30 minutes!</p>
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-4">
+				<div class="integration__item">
+					<div class="image-wrapper">
+						<img src="img/int1.png" alt="">			
+					</div>
+					<div class="integration__item-num">
+							1
+						</div>
+						<p>Install our lightweight SDK</p>
+				</div>		
+			</div>
+
+			<div class="col-lg-4">
+				<div class="integration__item">
+					<div class="image-wrapper image-wrapper-top">
+						<img src="img/int2.png" alt="">			
+					</div>
+					<div class="integration__item-num">
+							2
+						</div>
+						<p>Choose where to place <br>
+							the dating button in your app</p>
+				</div>		
+			</div>
+
+			<div class="col-lg-4">
+				<div class="integration__item">
+					<div class="image-wrapper">
+						<img src="img/int3.png" alt="">			
+					</div>
+					<div class="integration__item-num">
+							3
+						</div>
+						<p>Your users are instantly <br> connected to the global network</p>
+				</div>		
+			</div>
+
+
+		</div>
+
+		<p class="text-center">
+			No technical complexity, no hassle — just seamless integration and immediate results.
+		</p>
+
+	</div>
+</section>
+<!-- end integration section -->
+
+<!-- start slide section -->
+<section class="work section slider-section">
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div class="col-lg-6">
+				<div class="slick-slide-wrapper">
+					<div class="arrows">
+						<div class="prev">
+							<img src="img/prev.svg" alt="">
+						</div>
+						<div class="next">
+							<img src="img/next.svg" alt="">
+						</div>
+					</div>
+					<div class="slick-slider">
+
+					<div class="slick-slider-item">
+						<div class="">
+					<img src="img/slide1.png" alt="" class="slick-slider__image">
+					</div>
+					</div>
+
+					<div class="slick-slider-item">
+						<div class="">
+					<img src="img/slider2.png" alt="" class="slick-slider__image">
+					</div>
+					</div>
+
+					<div class="slick-slider-item">
+						<div class="">
+					<img src="img/slider3.png" alt="" class="slick-slider__image">
+					</div>
+					</div>
+
+					<div class="slick-slider-item">
+						<div class="">
+					<img src="img/slider4.png" alt="" class="slick-slider__image">
+					</div>
+					</div>
+
+					<div class="slick-slider-item">
+						<div class="">
+					<img src="img/slider5.png" alt="" class="slick-slider__image">
+					</div>
+					</div>
+
+					<div class="slick-slider-item">
+						<div class="">
+					<img src="img/slider6.png" alt="" class="slick-slider__image">
+					</div>
+					</div>
+
+					
+
+				
+
+					
+
+
+
+
+				</div>
+				</div>
+				
+				
+			</div>
+
+			<div class="col-lg-6">
+
+				<div>
+					<div class="section-header section-header--left">
+			
+						<div class="sub-title">
+							Loved by Users & Businesses
+					</div>
+
+
+
+					<h2 class="h2">
+						Simple, engaging <br>
+						and easy-to-use <br>
+						interface
+					</h2>
+
+					<p class="text pay-text">
+						The UI is easy to use and feels natural for your users. Connecting with others has never been simpler!
+					</p>
+					
+						</div>
+
+
+						<div class="buttons-wrapper">
+							<a href="" class="button">
+								Get Started
+									
+								</a>
+		
+							<a href="" class="link">
+								Learn More
+							</a>
+						</div>
+				</div>
+				
+					
+				</div>
+
+				
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end slide section -->
+
+<!-- start work section -->
+<section class="work section fees">
+	<div class="container-fluid">
+
+		<div class="row">
+
+		
+
+			<div class="col-lg-6">
+				<div class="section-header section-header--left">
+			
+						<div class="sub-title">
+							Simply No Fees
+					</div>
+
+
+
+					<h2 class="h2">
+						You pay nothing <br>
+						to use our service
+					</h2>
+
+					<p class="text text--black">Our earnings depend on your success—it’s a <br>
+						true win-win model.</p>
+
+						<p class="text mt-3">
+							We only succeed when you succeed.
+						</p>
+
+
+						</div>
+
+						<div class="image-wrapper image-wrapper--center image-wrapper--mobile">
+							<img src="img/fees.png" alt="">
+						</div>
+
+					<div class="row">
+
+						<div class="col-12 mb">
+
+							<div class="item item--2">
+								<div class="item__icon-wrapper">
+									<img src="img/f1.svg" alt="">						
+								</div>
+
+								<div>
+									No Monthly Fees
+									<div class="price-text">
+										We simply take a percentage of the payments made by users.
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="item item--2">
+								<div class="item__icon-wrapper">
+									<img src="img/f2.svg" alt="">						
+								</div>
+
+								<div>
+									Commission ranges from 10% to 30%
+									<div class="price-text">
+										The more you earn, the lower our commission.
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="item item--2">
+								<div class="item__icon-wrapper">
+									<img src="img/f3.svg" alt="">						
+								</div>
+
+								<div>
+									Monthly Payouts
+									<div class="price-text">
+										Commission is automatically deducted without any extra steps.
+									</div>
+								</div>
+								
+							</div>
+
+			
+
+					<div class="buttons-wrapper">
+						<a href="" class="button button--black">
+							Get Started
+									
+							</a>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-6">
+			<div class="image-wrapper image-wrapper--center">
+				<img src="img/fees.png" alt="">
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- end work section -->
+
+<!-- start faq section -->
+<section class="faq section pt-0">
+	<div class="container-fluid">
+		<div class="section-header section-header--center">
+
+		<h2 class="h2">
+			Frequently Asked Questions
+		</h2>
+
+		<p class="text">If you can't find an answer that you're looking for, feel free to drop us a line.</p>
+
+		<div class="buttons-wrapper">
+			<a href="" class="button button--black button--msg">
+				Send us a Message
+			</a>
+
+			<a href="" class="link">
+				See More FAQs
+			</a>
+		</div>
+		</div>
+
+		<div class="faq-list">
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+					How does user onboarding work?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							Can users under 21 use the service?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							Do I need to provide technical support to users?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							Who moderates and verifies user profiles?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							How long does it take to integrate the service into my app?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							Are there any limits on the number of users who can access the service?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							Can I customize the button and section to match my app’s design?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							Are there any hidden fees or extra costs for app owners?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							What happens if one of my users violates the service rules?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			<!-- start faq item -->
+			<div class="faq-item">
+				<div>
+						<div class="faq__title">
+							How do I get paid?
+				</div>
+				<div class="faq__text">
+					Users see a new section in your app, open it, read about the service, and click "Apply," agreeing to the terms.
+				</div>
+				</div>
+			
+			</div>
+			<!-- end faq item -->
+
+			
+		</div>
+	</div>
+</section>
+<!-- end faq section -->
+
+<!-- start footer -->
+<footer class="footer">
+	<div class="footer__content">
+
+		<div class="footer__col footer__col--bottom">
+			<a href="" class="footer__logo">
+				<img src="img/logo-footer.svg" alt="">
+			</a>
+
+			<div class="copy">
+				© 2025 Dating in Your App. <br>
+All Rights Reserved.    
+			</div>
+
+			<div class="footer-social">
+
+				<a href="">
+					<img src="img/x.svg" alt="">
+				</a>
+
+				<a href="">
+					<img src="img/fb.svg" alt="">
+				</a>
+
+				<a href="">
+					<img src="img/youtube.svg" alt="">
+				</a>
+
+				<a href="">
+					<img src="img/inst.svg" alt="">
+				</a>
+
+			</div>
+
+			<div class="bottom-footer-menu">
+				<a href="" class="bottom-link">
+					Privacy Policy
+				</a>
+				<a href="" class="bottom-link">
+					Terms of Use
+				</a>
+			</div>
+		</div>
+
+		<div class="footer__col footer__col--menu">
+			<div class="footer-menu">
+
+				<div class="footer-menu__col">
+					<div class="footer-menu__title">
+						For anyone
+					</div>
+
+					<a href="" class="footer-menu__link">
+						Fitness
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Social Networks
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Cooking
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Travel Apps
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Wallpapers
+					</a>
+				</div>
+
+				<div class="footer-menu__col">
+					<div class="footer-menu__title">
+						Resources
+					</div>
+
+					<a href="" class="footer-menu__link">
+						Press & Blog
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Knowledge Centre
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Become a Partner
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Travel Apps
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Tax Resources
+					</a>
+				</div>
+
+				<div class="footer-menu__col">
+					<div class="footer-menu__title">
+						Company
+					</div>
+
+					<a href="" class="footer-menu__link">
+						Support
+					</a>
+
+					<a href="" class="footer-menu__link">
+						About Us
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Contact Us
+					</a>
+
+					<a href="" class="footer-menu__link">
+						Our Mission
+					</a>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer__col footer__col--leng">
+
+			<div class="custom-dropdown">
+				<div class="dropdown-selected" data-value="en">
+				  <img src="img/en.svg" alt="EN Flag" class="dropdown-flag" />
+				  EN
+				</div>
+				<ul class="dropdown-options">
+				  <li class="dropdown-option" data-value="en">
+					<img src="img/en.svg" alt="EN Flag" class="dropdown-flag" />
+					EN
+				  </li>
+				  <li class="dropdown-option" data-value="ru">
+					<img src="img/en.svg" alt="RU Flag" class="dropdown-flag" />
+					RU
+				  </li>
+				  <li class="dropdown-option" data-value="fr">
+					<img src="img/en.svg" alt="ESP Flag" class="dropdown-flag" />
+					ESP
+				  </li>
+				  
+				</ul>
+			  </div>
+			  
+
+			  
+			  
+		</div>
+
+		<div class="footer__col footer__col--buttons">
+			<div class="footer-buttons">
+				<a href="" class="footer__link">
+					Sign In
+				</a>
+				<a href="" class="footer__link footer__link--white">
+					Get Started
+				</a>
+			</div>
+		</div>
+
+		
+
+
+
+	</div>
+</footer>
+<!-- end footer -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('.slick-slider').slick({
+  infinite: true,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next'),
+  dots: true,
+
+});
+	
+	</script>
+	<script>
+	const slider = document.getElementById('slider');
+const sliderFill = document.getElementById('slider-fill');
+const sliderThumb = document.getElementById('slider-thumb');
+const tooltip = document.getElementById('tooltip2');
+
+// Устанавливаем начальное значение слайдера (например, 50%):
+const initialPercentage = 50; // Например, 50% от ширины слайдера
+
+// Функция для обновления слайдера
+function updateSlider(event) {
+  const sliderRect = slider.getBoundingClientRect();
+  const thumbWidth = sliderThumb.offsetWidth;
+  let newLeft = event.clientX - sliderRect.left - thumbWidth / 2;
+
+  // Ограничиваем слайдер в пределах контейнера
+  if (newLeft < 0) newLeft = 0;
+  if (newLeft > sliderRect.width - thumbWidth) newLeft = sliderRect.width - thumbWidth;
+
+  // Обновляем положение ползунка
+  sliderThumb.style.left = `${newLeft}px`;
+
+  // Обновляем цвет заполненной части слайдера
+  sliderFill.style.width = `${newLeft + thumbWidth / 2}px`;
+
+  // Вычисляем процентное значение
+  const percentage = (newLeft / sliderRect.width) * 100;
+  
+  // Преобразуем процент в значение пользователей (например, от 0 до 5000)
+  const value = Math.round((percentage / 100) * 5000); 
+
+  // Обновляем текст тултипа
+  tooltip.textContent = `${value.toLocaleString()} users`;
+
+  // Обновляем позицию тултипа
+  tooltip.style.left = `${newLeft + thumbWidth / 2 - tooltip.offsetWidth / 2}px`;
+}
+
+// Устанавливаем начальное положение слайдера
+function setInitialValue() {
+  const sliderRect = slider.getBoundingClientRect();
+  const thumbWidth = sliderThumb.offsetWidth;
+  const initialLeft = (initialPercentage / 100) * sliderRect.width - thumbWidth / 2;
+
+  // Обновляем положение ползунка
+  sliderThumb.style.left = `${initialLeft}px`;
+
+  // Обновляем заполненную часть слайдера
+  sliderFill.style.width = `${initialLeft + thumbWidth / 2}px`;
+
+  // Обновляем значение в тултипе
+  const value = Math.round((initialPercentage / 100) * 5000);
+  tooltip.textContent = `${value.toLocaleString()} users`;
+
+  // Обновляем позицию тултипа
+  tooltip.style.left = `${initialLeft + thumbWidth / 2 - tooltip.offsetWidth / 2}px`;
+}
+
+// Устанавливаем начальное значение слайдера при загрузке страницы
+window.addEventListener('load', setInitialValue);
+
+// Обработчики событий для перетаскивания
+sliderThumb.addEventListener('mousedown', (event) => {
+  event.preventDefault();
+  
+  // Начинаем перетаскивание
+  document.addEventListener('mousemove', updateSlider);
+  document.addEventListener('mouseup', () => {
+    document.removeEventListener('mousemove', updateSlider);
+  });
+});
+
+// Событие для клика на слайдере, чтобы мгновенно поставить бегунок на место
+slider.addEventListener('click', (event) => {
+  if (event.target !== sliderThumb) {
+    updateSlider(event);
+  }
+});
+
+	  </script>
+
+	  <script>
+		// Находим все элементы с классом faq__item
+const faqItems = document.querySelectorAll('.faq-item');
+
+// Добавляем обработчик события на каждый элемент
+faqItems.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active'); // Добавляет или удаляет класс active
+  });
+});
+
+	  </script>
+
+	
+
+	<script>
+		// Находим элементы
+const dropdown = document.querySelector('.custom-dropdown');
+const selected = dropdown.querySelector('.dropdown-selected');
+const options = dropdown.querySelector('.dropdown-options');
+const optionItems = options.querySelectorAll('.dropdown-option');
+
+// Открытие/закрытие выпадающего списка
+selected.addEventListener('click', () => {
+  const isVisible = options.style.display === 'block';
+  options.style.display = isVisible ? 'none' : 'block';
+});
+
+// Обработка клика по элементу списка
+optionItems.forEach(option => {
+  option.addEventListener('click', () => {
+    const value = option.dataset.value; // Получаем значение
+    const flagSrc = option.querySelector('img').src; // Получаем путь к изображению
+    const text = option.textContent.trim(); // Получаем текст (например, EN)
+
+    // Обновляем текст и флаг выбранного элемента
+    selected.innerHTML = `<img src="${flagSrc}" alt="${text} Flag" class="dropdown-flag" /> ${text}`;
+    selected.dataset.value = value;
+
+    // Закрываем выпадающий список
+    options.style.display = 'none';
+
+    // Выводим выбранное значение (или используем для других целей)
+    console.log(`Вы выбрали: ${value}`);
+  });
+});
+
+// Закрытие списка при клике вне его
+document.addEventListener('click', (event) => {
+  if (!dropdown.contains(event.target)) {
+    options.style.display = 'none';
+  }
+});
+
+	</script>
+</body>
+</html>

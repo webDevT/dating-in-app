@@ -1,0 +1,876 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body * 
+    box-sizing: border-box
+body 
+    margin: 0
+    padding: 0
+    font-family: $main-font
+    font-size: 17px
+    font-weight: 500
+.container-fluid
+    width: 1140px 
+    max-width: 91.467vw
+    margin-left: auto
+    margin-right: auto
+    padding-left: 0 
+    padding-right: 0
+ul 
+    padding: 0 
+    margin: 0 
+    list-style: none
+.section 
+    padding-top: 120px 
+    padding-bottom: 120px
+.h1 
+    font-family: $gabarito
+    font-size: 58px
+    margin-bottom: 0
+    span 
+        white-space: nowrap
+        background: $accent
+        color: #fff
+        font-size: 43.65px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 345px
+        border-radius: 22px
+        padding: 5px 18px 
+        transform: rotate(-2.89deg)
+        margin-left: 10px
+        position: relative
+        img 
+            margin-right: 8px
+.h1-row
+    white-space: nowrap
+    display: flex
+.h2
+    font-size: 44px
+    font-family: $gabarito
+    font-weight: 700
+    
+.text 
+    color: $dark-4
+    line-height: 160% 
+    margin-top: 0 
+    margin-bottom: 0
+    font-size: 17px
+.link
+    color: $dark-2
+    border-bottom: 2px solid rgba(#000, .2)
+    padding-bottom: 5px
+    padding-top: 5px
+    text-decoration: none
+.link:hover 
+    color: $dark-2
+.red-text 
+    position: absolute
+    right: 0
+    bottom: 53px
+    font-size: 22px 
+    font-family: $patrick-hand
+    background: transparent
+    transform: translateY(-100px) translateX(100%)
+    color: $accent 
+    text-align: center
+.h1-row
+    position: relative
+//end global style
+
+//start buttons style 
+.button
+    padding: 15px 28px
+    //padding-right: 50px
+    border: 2px solid #000
+    border-radius: 32px
+    text-decoration: none
+    color: $dark-1
+    display: flex
+    align-items: center
+    transition: all .5s
+    font-family: $gabarito
+.button:after
+    content: ''
+    background-image: url('../img/arrow.svg')
+    background-repeat: no-repeat
+    background-position: center 
+    background-size: 100%
+    width: 12px 
+    height: 12px
+    display: block
+    margin-left: 9px
+    transition: all .3s
+.button:hover:after
+    background-image: url('../img/arrow-white.svg')
+    background-repeat: no-repeat
+    background-position: center 
+    background-size: 100%
+    transform: translateX(4px)
+.button:hover
+    background-color: $dark-1
+    color: #fff
+.button--black
+    background: #000
+    color: #fff
+.button--black:after
+    background-image: url('../img/arrow-white.svg')
+    background-repeat: no-repeat
+    background-position: center 
+    background-size: 100% 
+.button--black:hover
+    background: #fff
+    color: $dark-1
+.button--black:hover:after
+    background-image: url('../img/arrow.svg')
+    background-repeat: no-repeat
+    background-position: center 
+    background-size: 100%
+.button--msg:after
+    background-image: url('../img/tg.svg')
+    background-repeat: no-repeat
+    background-position: center 
+    background-size: 100% 
+.button--msg:hover:after
+    background-image: url('../img/tg-black.svg')
+    background-repeat: no-repeat
+    background-position: center 
+    background-size: 100% 
+    transform: translateX(0)
+//end button style
+
+//start top header 
+.top-header 
+    background: $dark-2
+    color: #fff
+    padding-top: 14px 
+    padding-bottom: 14px
+    font-family: $gabarito
+    font-weight: 600
+    position: relative
+    font-size: 15px
+    .container-fluid 
+        display: flex 
+        justify-content: center 
+        align-items: center
+.top-header__link 
+    display: block
+    margin-left: 7px 
+    margin-right: 10px
+    color: #fff
+.timer 
+    opacity: .6
+.close 
+    width: 18px 
+    height: 18px 
+    background: url('../img/close.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+    position: absolute 
+    top: 50%
+    transform: translateY(-50%)
+    right: 10px
+    cursor: pointer
+//end top header
+
+//start header style 
+.header 
+    .container-fluid 
+        border-bottom: 1px solid rgba(#000, .05)
+        padding-top: 35px
+        padding-bottom: 35px
+        display: flex 
+        justify-content: space-between
+        align-items: center
+.menu-wrapper 
+    width: calc(100% - 230px)
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+.menu 
+    ul 
+        display: flex
+        li 
+            margin-right: 25px
+            position: relative
+            padding-top: 10px 
+            padding-bottom: 10px
+    a 
+        color: $dark-3
+        text-decoration: none
+        display: flex 
+        align-items: center
+        img 
+            margin-left: 10px
+            display: block
+    a:hover 
+        color: $accent
+.sub-menu
+    position: absolute
+    top: 100%
+    background: #fff 
+    border: 1px solid rgba(#000, .1)
+    border-radius: 5px
+    z-index: 9
+    width: 200px
+    padding: 20px
+    display: none
+    a 
+        padding-bottom: 15px
+        margin-bottom: 15px
+        border-bottom: 1px solid rgba(#000, .05)
+    a:last-child 
+        margin-bottom: 0px
+        border-bottom: none
+        padding-bottom: 0
+    a:hover 
+        color: $accent
+.menu li:hover .sub-menu 
+    display: block
+.logo 
+    position: relative
+    top: 3px
+.sub-item:after 
+    content: ''
+    width: 10px 
+    height: 6px 
+    margin-left: 8px
+    background: url('../img/down.svg')
+    background-repeat: no-repeat 
+    background-position: center
+    background-size: 100%
+.menu .sub-item:hover:after 
+    background: url('../img/down-red.svg')
+    background-repeat: no-repeat 
+    background-position: center
+    background-size: 100%
+//end header style 
+
+//start main screen 
+.main-screen 
+    padding-top: 50px
+.main-screen__row
+    display: flex 
+    width: 100% 
+    justify-content: space-between
+.main-screen__sub-heading
+    display: flex 
+    align-items: center
+    background: #F0F0F5
+    padding: 10px 16px
+    border-radius: 30px
+    color: #171717
+    font-weight: 700
+    width: 370px 
+    max-width: 100%
+    font-size: 16px
+.main-screen__sub-heading-photos
+    display: flex 
+    align-items: center
+    margin-right: 10px
+    font-size: 16px
+    img 
+        display: block
+        border: 2px solid #F0F0F5
+        border-radius: 50px
+    img:nth-child(2)
+        margin-left: -10px
+    img:nth-child(3)
+        margin-left: -10px
+.main-screen__title
+    font-family: $gabarito
+    font-weight: 900
+    font-size: 58px
+.main-screen__col
+    width: 50%
+.buttons-wrapper
+    display: flex 
+    align-items: center
+.main-screen__content
+    display: flex 
+    flex-direction: column
+    align-items: flex-start
+.main-screen__title
+    margin-top: 16px
+.main-screen .text 
+    width: 377px 
+    max-width: 100% 
+.buttons-wrapper
+    margin-top: 24px
+    .link 
+        margin-left: 32px
+.red-text
+    position: relative
+    width: 250px
+    div 
+        transform: rotate(-13.42deg)
+.arrow-red
+    position: absolute
+    top: 150%
+    left: 50% 
+    transform: translateY(-50%)
+.red-text-wrapper
+    position: relative
+.main-screen__row
+    display: flex
+.photo-wrapper
+    width: 536px
+    max-width: 100%
+.photo-row
+    display: flex 
+    justify-content: flex-end
+    align-items: flex-end
+    margin-bottom: 13px
+    img 
+        display: block 
+        margin-left: 13px
+.photo-row:nth-child(2)
+    display: flex 
+    align-items: flex-start
+    justify-content: flex-end
+    padding-right: 30px
+.main-screen__col:nth-child(2)
+    display: flex 
+    justify-content: flex-end
+.red-text-wrapper
+    height: 70px
+//end main screen 
+
+.section 
+    padding-top: 120px 
+    padding-bottom: 120px
+
+//start work style 
+.image-wrapper
+    width: 466px 
+    max-width: 100% 
+    background: #F0F0F5
+    display: flex
+    justify-content: center 
+    align-items: flex-end
+    border-radius: 12px
+.icon-item 
+    width: 36px
+    height: 36px 
+    background: #F0F0F5
+    border-radius: 7.2px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-left: 4px 
+    margin-right: 4px
+.icons-row 
+    display: flex 
+    align-items: center
+    margin-left: 18px
+.sub-title-wrapper 
+    display: flex 
+    align-items: center
+.sub-title
+    font-size: 16px
+    background: $grey
+    font-weight: 600
+    padding: 4px 12px
+    border-radius: 20px
+    margin-bottom: 18px
+.item
+    display: flex
+    align-items: center
+    margin-top: 16px
+    font-size: 17px
+    font-weight: 700
+.item__icon-wrapper
+    width: 30px
+//end work style 
+
+//start black section
+.black-section
+    padding-top: 90px
+    padding-bottom: 90px
+    background: #171717
+    color: #fff
+    min-height: 529px
+    background-image: url('../img/bg.png')
+    background-repeat: no-repeat 
+    background-position: right bottom
+    background-size: auto 100%
+    position: relative
+    overflow: hidden
+    .sub-title 
+        background: rgba(#F0F0F5, .12)
+.black-section__content
+    display: flex 
+    flex-direction: column 
+    align-items: flex-start
+    .button 
+        margin-top: 30px
+    h2 
+        span 
+            color: #F55B47
+    .text 
+        color: rgba(#fff, .6)
+.button--red
+    background: $accent
+    color: #fff
+    border-color: $accent
+.button--red:after
+    background: url('../img/arrow-white.svg')
+.button--red:hover 
+    background: transparent 
+    border-color: $accent
+    color: $accent
+.button--red:hover:after
+    background-image: url('../img/arrow-red2.svg')
+.bg 
+    position: absolute 
+    top: 0 
+    right: 0 
+    background-size: 10vw
+    z-index: 0
+//end black section 
+
+//start calculator style 
+.calculator
+    .col-lg-6 
+        background: #F0F0F5
+        padding: 62px 53px
+    .col-lg-6:first-child 
+        border-top-left-radius: 32px
+        border-bottom-left-radius: 32px
+    .col-lg-6:nth-child(2)
+        background: #E5E5EB
+        border-top-right-radius: 32px
+        border-bottom-right-radius: 32px
+.calculator-sub-title
+    font-weight: 700
+    margin-bottom: 12px
+.radio-item
+    display: block
+    margin-bottom: 10px
+    border: 1px solid rgba(#000, .08)
+    background: #F0F0F5
+    cursor: pointer
+    padding: 16px
+    border-radius: 19px
+    display: flex
+    p 
+        font-size: 13px
+        margin-bottom: 0
+    input 
+        display: none
+.radio-item:has(input:checked)
+    background: #fff
+.radio-dot
+    width: 20px 
+    height: 20px
+    min-width: 20px
+    border: 7px solid $accent
+    border-radius: 50%
+    background: #fff
+    border: 1px solid rgba(#000, .08)
+.radio-item:has(input:checked)
+    .radio-dot
+        border: 7px solid $accent
+.radio-item__content
+    margin-left: 14px
+.radio-item__title 
+    font-size: 15px
+    font-weight: 700
+input[type="range"]:focus
+    background: green
+    outline: none
+//end calculator style 
+.slider-fill
+    border-top-left-radius: 10px 
+    border-bottom-left-radius: 10px
+.slider-wrapper 
+    margin-top: 28px
+.price-item
+    margin-bottom: 10px
+    background: #D7D7DE
+    border-radius: 15px
+    padding: 14px 20px
+.price-item__icon-wrapper
+    min-width: 33px
+.price-item 
+    display: flex
+.price-item__title 
+    font-size: 15px 
+    font-weight: 700
+    margin-top: 4px
+.price-value
+    font-size: 24px
+    font-weight: 700
+.price-text
+    font-size: 12px
+    color: #737374
+    font-weight: 700
+.price-value--red
+    background: #F55B47
+    color: #fff
+    padding: 0 6px
+    border-radius: 5px
+.price-item__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+.price-item--transparent
+    background: transparent
+    padding-bottom: 0
+    .price-text
+        font-size: 15px
+.section-header--center
+    display: flex
+    flex-direction: column 
+    align-items: center
+    justify-content: center
+    width: 550px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+    text-align: center
+.how-it-works
+    padding-bottom: 140px
+.how-it-works__img
+    width: 100%
+.how-it-works__content
+    margin-top: 40px
+    display: flex 
+    flex-direction: column 
+    align-items: center
+.red-label 
+    margin-left: auto 
+    margin-right: auto 
+    text-align: center 
+    background: $accent 
+    color: #fff
+    padding: 8px 20px
+    border-radius: 30px
+    transform: translateY(-50%)
+.item--2
+    align-items: flex-start
+.mb 
+    margin-bottom: 24px
+.pt-0 
+    padding-top: 0
+.section-header--left
+    display: flex
+    flex-direction: column 
+    align-items: flex-start
+.text--row
+    display: flex
+    align-items: center
+.text-19 
+    font-size: 19px
+    .text 
+        font-size: 19px
+.pay-text
+    width: 360px 
+    max-width: 100%
+    margin-top: 12px
+    span 
+        color: $accent
+        font-weight: 700
+.semi-bold 
+    font-weight: 600
+.image-wrapper--2
+    padding-right: 0
+    display: flex 
+    justify-content: flex-end
+    padding-top: 43px 
+    padding-bottom: 43px
+    img 
+        margin-right: 0
+.pay
+    display: flex 
+    align-items: center
+    .col-lg-6 
+        display: flex
+        align-items: center
+.integration__item
+    text-align: center
+    margin-top: 45px
+    .image-wrapper
+        height: 377px
+.integration__item-num
+    width: 36px 
+    height: 36px 
+    background: $accent
+    display: flex 
+    justify-content: center
+    align-items: center
+    color: #fff
+    border-radius: 50%
+    margin-left: auto 
+    margin-right: auto
+    margin-top: -18px
+    position: relative
+    z-index: 1
+    border: 4px solid #fff
+    font-size: 15px
+    font-family: $gabarito
+    margin-bottom: 3px
+.image-wrapper-top
+    display: flex
+    align-items: flex-start
+.integration
+    .row 
+        margin-bottom: 37px
+.text--black 
+    color: $dark-2
+.image-wrapper--center
+    display: flex 
+    justify-content: center 
+    align-items: center
+    padding-top: 30px
+.image-wrapper--mobile
+    display: none
+.slick-slide-wrapper
+    background: #F0F0F5
+    width: 466px
+    max-width: 100%
+    border-radius: 12px
+    position: relative
+.slick-slider__image
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+.slick-dots
+    display: flex
+    justify-content: center 
+    padding: 0 
+    margin: 0
+    position: absolute
+    bottom: -40px
+    left: 50% 
+    transform: translateX(-50%)
+    li 
+        margin: 0 4px
+        button 
+            font-size: 0 
+            width: 8px 
+            height: 8px 
+            background: #FFD8D3
+            border: none
+            padding: 0
+            border-radius: 50%
+    .slick-active 
+        button
+            background: $accent
+.prev 
+    position: absolute 
+    top: 50% 
+    left: 0 
+    transform: translateY(-50%) translateX(-300%)
+    cursor: pointer
+.next
+    position: absolute 
+    top: 50% 
+    right: 0 
+    transform: translateY(-50%) translateX(300%)
+    cursor: pointer
+//start faq style
+.faq-list
+    margin-top: 54px
+    width: 634px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+.faq-item
+    background: #F0F0F5
+    padding: 20px 24px
+    margin-bottom: 17px
+    border-radius: 16px
+    display: flex 
+    justify-content: space-between
+    cursor: pointer
+    transition: all 0.5s
+.faq-item:after 
+    content: ''
+    width: 13px
+    min-width: 13px
+    height: 8px 
+    display: block 
+    background: url('../img/arrow-down.svg')
+    background-size: 100%
+    background-position: center
+    margin-top: 12px
+    cursor: pointer
+    transition: all .3s
+    margin-left: 45px
+.faq__text
+    display: none
+    margin-top: 12px
+    font-size: 16px
+.faq__title
+    font-size: 20px 
+    color: #222222
+    font-weight: 500
+    font-family: $gabarito
+.faq-item.active 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 6px 10px rgba(0, 0, 0, 0.06)
+    background: #fff
+    border: 1px solid rgba(#000, .08)
+    .faq__text
+        display: block
+.faq-item.active:after 
+    transform: rotate(-180deg)
+    transition: all .3s
+
+//end faq style
+
+//start footer 
+.footer 
+    padding: 19px 20px
+.footer__content 
+    background: $dark-2
+    padding: 67px 100px 124px 100px
+    border-radius: 24px
+    color: #fff
+    background-image: url('../img/footer-bg.svg')
+    background-repeat: no-repeat
+    background-position: bottom right
+.footer__content
+    display: flex 
+    justify-content: space-between
+.footer-menu__link
+    display: block
+.footer-menu 
+    display: flex
+//end footer
+
+//start custom select
+.custom-dropdown
+    position: relative
+    width: 70px
+.dropdown-selected
+    border-radius: 5px
+    padding: 0px
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 15px
+    font-weight: 700
+    font-family: $gabarito
+.dropdown-selected img
+    width: 20px
+    height: 20px
+    margin-right: 4px
+.dropdown-selected::after
+    content: ""
+    width: 10px 
+    height: 6px
+    background: url('../img/triangle.svg')
+.dropdown-options
+    list-style: none
+    padding: 0
+    margin: 0
+    display: none
+    position: absolute
+    top: 150%
+    left: 0
+    width: auto
+    background: #121212
+    border: 1px solid rgba(#fff, .2)
+    border-radius: 5px
+    z-index: 1000
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+    overflow: hidden
+.dropdown-option
+    padding: 10px
+    cursor: pointer
+    font-size: 15px
+    font-family: $gabarito
+    display: flex
+    align-items: center
+.dropdown-option img
+    width: 20px
+    height: 20px
+    margin-right: 10px
+.dropdown-option:hover
+    background: rgba(#fff, .2)
+.dropdown-option:active
+    background: #e0e0e0
+.copy 
+    margin-top: 23px 
+    margin-bottom: 23px
+    font-size: 15px
+    opacity: 0.5
+.footer-social 
+    display: flex
+    align-items: center
+    margin-bottom: 33px
+    a 
+        display: block 
+        text-decoration: none 
+        margin-right: 24px
+        opacity: 0.5
+        transition: all .3s
+    a:hover 
+        opacity: 1
+.bottom-footer-menu
+    display: flex 
+    align-items: center
+.bottom-link
+    opacity: 0.5
+    color: #fff 
+    text-decoration: none
+    font-size: 15px
+    margin-right: 30px
+.bottom-link:hover 
+    color: #fff
+    opacity: 1
+.footer-menu__col
+    margin-right: 35px
+    margin-left: 35px
+.footer-menu
+    font-size: 16px
+.footer-menu__title
+    margin-bottom: 23px 
+    opacity: 0.5
+.footer-menu__link
+    color: #fff
+    margin-bottom: 12px 
+    text-decoration: none
+    font-size: 16px
+.footer-menu__link:hover 
+    opacity: 0.5
+    color: #fff
+.footer-buttons 
+    display: flex 
+    align-items: center
+    a 
+        display: flex 
+        align-items: center 
+        justify-content: center
+        font-size: 15px
+        font-family: $gabarito
+        font-weight: 700
+.footer__link 
+    text-decoration: none
+    padding: 9px 20px
+    border-radius: 48px
+    color: #fff
+.footer__link:hover 
+    color: #fff
+    opacity: 0.9
+.footer__link--white 
+    background: #fff
+    color: #222222
+.footer__link--white:hover 
+    background: rgba(#fff, .9)
+    color: #222222
+.custom-dropdown 
+    padding-top: 9px
+//end custom select
+
+
+
+@import "media"
+
+
+

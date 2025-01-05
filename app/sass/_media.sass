@@ -1,0 +1,738 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1360px)
+	/**/
+	.bg 
+		width: 60vw
+		top: 50% 
+		transform: translateY(-50%)
+	.footer-menu__col
+		margin-left: 20px 
+		margin-right: 20px
+	.footer__content
+		padding-left: 60px 
+		padding-right: 60px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.photo-row
+		img 
+			max-width: 50%
+	.main-screen__title
+		font-size: 44px
+	.h1 span
+		font-size: 32px
+		width: 280px
+	.red-text
+		width: 200px
+	.red-text-wrapper
+		height: 56px
+	.red-text 
+		font-size: 18px
+	.red-text
+		width: 196px
+	.red-text 
+		bottom: 29px
+	.prev
+		transform: translateY(-50%) translateX(-200%)
+	.next
+		transform: translateY(-50%) translateX(200%)
+	.footer__content
+		padding-left: 30px 
+		padding-right: 30px
+	.footer-menu__link
+		font-size: 15px
+		margin-right: 0
+		margin-bottom: 10px
+	.footer-menu__col
+		margin-left: 10px 
+		margin-right: 10px
+	.bottom-footer-menu
+		flex-direction: column
+		align-items: flex-start
+	.bottom-link
+		margin-bottom: 10px
+		display: block
+	.footer__logo
+		img 
+			width: 180px
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.main-screen__row 
+		flex-direction: column-reverse
+	.photo-wrapper 
+		display: flex
+	.main-screen 
+		.container-fluid 
+			width: 100% 
+			max-width: 100%
+	.photo-row:nth-child(2) 
+		padding-right: 0
+	.photo-wrapper
+		width: 100%
+		overflow: hidden
+		display: flex 
+		justify-content: center 
+		align-items: center
+	.main-screen__col 
+		width: 100%
+	.photo-row
+		img 
+			margin-left: 0.667vw 
+			margin-right: 0.667vw
+	.photo1
+		min-width: 23.467vw
+	.photo2 
+		min-width: 31.467vw
+	.photo3
+		min-width: 27.467vw
+	.photo4 
+		min-width: 32.533vw
+	.photo-row,
+	.photo-row:nth-child(2)
+		display: flex
+		align-items: center
+	.photo-wrapper 
+		margin-bottom: 8.267vw
+	.main-screen__content
+		padding-left: 5vw 
+		padding-right: 5vw
+		text-align: center
+	.main-screen__sub-heading 
+		margin-left: auto 
+		margin-right: auto
+	.main-screen .text
+		width: 100%
+	.buttons-wrapper 
+		margin-left: auto 
+		margin-right: auto
+	.main-screen__title 
+		margin-left: auto 
+		margin-right: auto
+		margin-top: 30px 
+		margin-bottom: 20px
+	.bg 
+		position: static
+		transform: translateY(0) translateX(0%)
+		right: 50% 
+		width: 100vw
+	.image-wrapper
+		margin-left: auto 
+		margin-right: auto
+		margin-bottom: 24px
+	.sub-title-wrapper 
+		justify-content: center 
+		align-items: center
+		.sub-title 
+			margin-bottom: 0
+	.work
+		.h2 
+			text-align: center
+		p 
+			text-align: center
+	.buttons-wrapper 
+		justify-content: center
+	.calculator
+		padding-top: 0 
+		padding-bottom: 0
+		.container-fluid
+			width: 100% 
+			max-width: 100%
+			.col-lg-6
+				border-radius: 0
+	.how-it-works
+		padding-top: 13.333vw
+		padding-bottom: 13.333vw
+	.red-label 
+		font-size: 2.667vw
+		padding: 1.067vw 2.667vw
+	.how-it-works__content
+		margin-top: 6.4vw
+
+	.pay 
+		.section-header
+			align-items: center
+		.pay-text
+			text-align: center
+			width: 100%
+	.text--row
+		justify-content: center
+	.image-wrapper--2
+		margin-top: 6.4vw
+	.fees 
+		.image-wrapper 
+			display: none
+		.image-wrapper--mobile 
+			display: flex
+			margin-top: 8vw
+	.section-header--left
+		align-items: center
+	br 
+		display: none
+	.integration .row 
+		margin-bottom: 0
+	.slick-slide-wrapper
+		margin-left: auto 
+		margin-right: auto
+	.prev,
+	.next 
+		display: none
+	.slider-section
+		
+		.container-fluid 
+			position: relative
+			padding-bottom: 15vw
+		.row 
+			display: flex 
+			flex-direction: column-reverse
+		.buttons-wrapper 
+			position: absolute
+			bottom: 0
+			left: 50% 
+			transform: translateX(-50%)
+	.footer__content
+		display: flex
+		flex-direction: column
+	.footer__content
+		position: relative
+	.footer__logo
+		position: absolute
+		top: 70px 
+		left: 30px
+	.footer__col--leng
+		order: 1
+		display: flex 
+		justify-content: flex-end
+		width: 100% 
+		padding-bottom: 5vw
+		margin-bottom: 5vw
+		border-bottom: 1px solid rgba(#fff, .5)
+	.footer__col--menu
+		order: 2
+	.footer__col--buttons
+		order: 3
+	.footer__col--bottom
+		order: 4
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	.bottom-footer-menu 
+		flex-direction: row
+	.footer-menu
+		display: flex 
+		justify-content: space-between
+	.footer-buttons
+		justify-content: center
+		padding-top: 5vw
+	.footer-social
+		order: 1
+		margin-top: 5vw
+	.bottom-footer-menu
+		order: 2
+	.copy
+		order: 3
+	.footer__content
+		padding-bottom: 20px
+	
+		
+
+	
+		
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.top-header
+		padding-top: 5vw
+		padding-bottom: 5vw
+		text-align: center
+	.top-header .container-fluid
+		display: flex 
+		flex-wrap: wrap
+		max-width: 85%
+	.top-header__link
+		margin: 0
+		margin-right: 1vw
+	.menu-wrapper
+		display: none
+	.top-header
+		font-size: 3.6vw
+	.close
+		width: 3.5vw 
+		height: 3.5vw
+		top: 2vw
+		transform: translate(0)
+	.logo 
+		img 
+			width: 56.8vw
+	.header
+		border-bottom: 1px solid rgba(#000, 0.05)
+		position: relative
+		.container-fluid 
+			padding-top: 6.133vw
+			padding-bottom: 6.133vw
+			border-bottom: none
+	.menu-btn__row
+		width: 5.6vw 
+		height: 0.533vw
+		background: rgba(#000, .5)
+		margin-bottom: 1.333vw
+		border-radius: 10vw
+		transition: all 0.3s
+	.menu-btn__row:last-child 
+		margin-bottom: 0
+	.menu-btn.active 
+		.menu-btn__row:last-child 
+			display: none
+		.menu-btn__row:first-child 
+			transform: rotate(45deg)
+			position: relative
+			top: 0.5vw
+			margin-bottom: 0
+		.menu-btn__row:nth-child(2)
+			transform: rotate(-45deg)
+			position: relative
+			top: 0vw
+			margin-bottom: 0
+	.header 
+		position: relative
+	.menu-wrapper.active
+		position: absolute
+		top: 101% 
+		left: 0 
+		width: 100%
+		display: block
+		background: #fff
+		padding-left: 5vw 
+		padding-right: 5vw
+		padding-top: 5vw 
+		padding-bottom: 10vw
+		border-bottom: 1px solid rgba(#000, 0.5)
+		.button 
+			margin-top: 5vw
+	.menu ul 
+		flex-direction: column
+	.menu ul li 
+		padding-top: 5vw 
+		padding-bottom: 5vw
+	.menu ul li a 
+		font-size: 4.533vw
+	.button 
+		width: 100%
+		display: flex 
+		justify-content: center
+		align-items: center
+	body 
+		font-size: 4.533vw
+	.sub-menu
+		position: static
+	.menu li:hover .sub-menu
+		display: none
+		border: none
+	.menu li:hover .sub-menu.active
+		display: block
+	.menu .sub-menu.active 
+		display: block
+	.sub-menu 
+		width: 100%
+		padding-bottom: 0
+		border: none
+		padding-left: 0 
+		padding-right: 0
+		a
+			padding-left: 20px
+			border-bottom: none
+			padding-bottom: 0vw
+			padding-top: 4vw
+	.sub-item:after
+		width: 3vw 
+		height: 2vw
+		margin-left: 2vw
+	.button:after
+		width: 3.467vw
+		height: 3.2vw
+		margin-left: 2.4vw
+	.main-screen 
+		padding-top: 11.467vw
+	.photo-row 
+		margin-bottom: 0
+	.buttons-wrapper 
+		flex-direction: column
+	.main-screen__sub-heading 
+		font-size: 4.267vw
+		width: 100%
+		padding: 2vw 1vw
+		border-radius: 5vw
+		justify-content: center
+		
+	.main-screen__sub-heading-photos img 
+		width: 6.4vw
+		height: 6.4vw
+		border-width: 0.533vw
+	.main-screen__sub-heading-photos img:nth-child(3),
+	.main-screen__sub-heading-photos img:nth-child(2)
+		margin-left: -2vw
+	.main-screen__title
+		font-size: 9.067vw
+	.h1 span
+		font-size: 7.2vw
+		width: 61vw
+	.red-text-wrapper
+		height: 10vw
+	.h1 span
+		transform: rotate(2.2deg)
+		padding: 1.867vw 4.533vw
+		border-radius: 3vw
+		padding-top: 0.5vw
+		padding-bottom: 0.5vw
+	.main-screen__title 
+		margin-top: 5.6vw
+		margin-bottom: 13.867vw
+	.red-text 
+		bottom: -14vw
+	.red-text div 
+		transform: rotate(0)
+		font-size: 5.6vw
+		br 
+			display: none
+	.red-text
+		width: 100%
+		transform: translateY(0) translateX(20%)
+		right: 50%
+	.arrow-red
+		display: none
+	.h1 span img 
+		width: 4.8vw
+	.red-text div 
+		position: relative
+	.red-text div:after 
+		content: ''
+		width: 7.467vw
+		height: 12vw
+		background: url('../img/arrow-mobile.svg')
+		background-repeat: no-repeat 
+		background-size: 100%
+		display: block 
+		position: absolute 
+		top: -6vw 
+		right: -10vw
+	.button 
+		width: 100%
+	.buttons-wrapper
+		width: 100%
+	.link
+		padding: 4vw 4vw
+		margin-top: 2vw
+	.buttons-wrapper .link 
+		margin-left: 0
+	.section 
+		padding-top: 13.333vw 
+		padding-bottom: 13.333vw
+	.h2 
+		font-size: 7.9vw
+	.sub-title
+		font-size: 4.2vw
+		padding: 2vw 3vw
+	.icon-item 
+		width: 9.6vw 
+		height: 9.6vw
+		margin-right: 0
+		margin-left: 2.133vw
+	.icons-row
+		margin-left: 0
+	.sub-title-wrapper
+		margin-bottom: 2.133vw
+	.image-wrapper
+		padding-top: 5.867vw
+		img
+			width: 53.6vw
+	.item 
+		font-size: 4.267vw
+		margin-top: 5.067vw
+	.item__icon-wrapper 
+		img 
+			height: 6vw
+			max-width: 4vw
+	.item__icon-wrapper
+		width: 8.533vw
+	.link 
+		padding-bottom: 1vw
+		padding-left: 0 
+		padding-right: 0
+	.black-section 
+		padding-top: 5vw
+		padding-bottom: 13.333vw
+	.black-section
+		background-image: none
+	.bg
+		width: 115vw
+		transform: translateX(-7vw)
+		margin-bottom: 4vw
+	.black-section 
+		text-align: center
+		.sub-title 
+			margin-left: auto 
+			margin-right: auto
+	.calculator
+		padding-top: 0 
+		padding-bottom: 0
+	.calculator .container-fluid .col-lg-6
+		padding-top: 13.333vw
+		padding-bottom: 13.333vw
+		padding-left: 5vw 
+		padding-right: 5vw
+	.calculator .container-fluid
+		.row 
+			margin-left: 0 
+			margin-right: 0
+	.price-item__icon-wrapper
+		width: 8.8vw
+		img 
+			width: 5vw
+			max-height: 5vw	
+	.price-item__title 
+		font-size: 4vw
+	.price-value 
+		font-size: 6.4vw
+	.price-text
+		font-size: 3.2vw
+	.price-item
+		padding: 4vw 2.5vw
+		margin-bottom: 2.667vw
+	.price-item--transparent .price-text
+		font-size: 4vw
+	.price-item--transparent
+		padding-bottom: 0
+	.work--2.section
+		padding-top: 44vw !important
+		position: relative
+		.section-header
+			position: absolute 
+			top: 0 
+			left: 50% 
+			transform: translateX(-50%)
+			width: 90vw
+			.sub-title 
+				margin-left: auto 
+				margin-right: auto
+		.h2 
+			margin-left: auto 
+			margin-right: auto
+	.pay
+		.section-header
+			align-items: center
+	.image-wrapper--2 img
+		width: 90%
+	.image-wrapper--2
+		padding-bottom: 0
+		padding-top: 4.267vw
+		margin-bottom: 20vw
+		margin-top: 0
+	.text-19,
+	.text-19 .text
+		font-size: 4.2vw
+	.pay
+		 
+		.container-fluid 
+			position: relative
+		.button 
+			position: absolute
+			bottom: 0 
+			left: 0
+	.pay-text 
+		margin-bottom: 0
+	.integration__item
+		.image-wrapper 
+			width: 100%
+			height: auto
+			padding: 0
+			padding-top: 13.333vw
+			margin-bottom: 0
+	.image-wrapper.image-wrapper-top
+		padding-top: 0
+		padding-bottom: 13.333vw
+	.slider-section
+		.container-fluid 
+			padding-bottom: 40vw
+	.slick-slide-wrapper
+		margin-top: 6.4vw
+	.integration__item-num
+		width: 9.6vw
+		height: 9.6vw
+		border-width: 1.067vw
+		font-size: 4vw
+	.faq-list
+		margin-top: 6.4vw
+	.faq-item 
+		margin-bottom: 4.533vw
+	.faq__title
+		font-size: 5.333vw
+	.faq__text 
+		font-size: 4.267vw
+	.faq-item:after 
+		margin-left: 4vw
+		width: 3vw
+		min-width: 3vw
+		height: 1.333vw
+		margin-top: 4vw
+	.footer
+		padding: 0
+	.footer__content
+		border-radius: 0
+		padding: 13.333vw 4.267vw 13.333vw 4.267vw
+	.footer-menu__col
+		width: 46%
+	.footer-menu
+		display: flex 
+		flex-wrap: wrap
+	.footer__logo img
+		width: 62.667vw
+	.footer__logo
+		top: 14vw
+	.dropdown-selected
+		font-size: 4vw
+	.dropdown-selected img
+		width: 5.333vw
+		height: 5.333vw
+	.custom-dropdown
+		width: 18vw
+	.dropdown-selected::after
+		width: 2.667vw
+		height: 1.6vw
+		background-size: 100%
+	.prev,
+	.next	
+		display: none !important
+	.slick-slider__image
+		width: 53vw
+	.slick-slider-item
+		padding-top: 6vw
+	.slider-section .container-fluid
+		padding-bottom: 50vw
+	.footer-menu__col 
+		margin-left: 0
+		margin-right: 0
+		width: 50%
+	.footer-menu__link,
+	.footer-menu__title
+		font-size: 4.267vw
+	.footer-menu__title,
+	.footer-menu__link
+		margin-bottom: 2.667vw
+	.footer-menu__col 
+		margin-bottom: 8vw
+	.footer__content 
+		background-image: none
+		padding-left: 0 
+		padding-right: 0
+	.footer-menu 
+		background: url('../img/footer-mobile.svg')
+		background-repeat: no-repeat
+		background-position: bottom 0 right 0
+		background-size: 53vw
+	.footer-menu,
+	.footer__col--leng,
+	.footer__col--bottom,
+	.footer__col--buttons
+		padding-left: 4.3vw 
+		padding-right: 4.3vw
+	.footer__logo
+		left: 4.3vw
+	.footer__col--bottom
+		align-items: center
+	.copy
+		font-size: 3.8vw
+		text-align: center 
+		margin-bottom: 0
+	.bottom-link
+		margin-left: 4.533vw
+		margin-right: 4.533vw
+		font-size: 4vw
+		margin-bottom: 0
+	.footer-social
+		margin-top: 5vw
+		margin-bottom: 8.533vw
+		img 
+			width: 6.4vw
+	.footer-buttons a
+		font-size: 4vw
+		padding: 2.4vw
+		margin-bottom: 5.333vw
+	.footer-buttons
+		display: flex
+		flex-direction: column-reverse
+		margin-top: 5vw
+	.footer-menu
+		padding-bottom: 8vw
+		
+	.footer__link--white
+		width: 100%
+
+	
+
+
+
+	
+
+		
+
+	
+	
+	
+	
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
