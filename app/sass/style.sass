@@ -10,6 +10,7 @@ body
     font-family: $main-font
     font-size: 17px
     font-weight: 500
+    box-sizing: border-box
 .container-fluid
     width: 1140px 
     max-width: 91.467vw
@@ -78,6 +79,9 @@ ul
     text-align: center
 .h1-row
     position: relative
+button 
+    background: transparent
+    outline: none
 //end global style
 
 //start buttons style 
@@ -868,7 +872,185 @@ input[type="range"]:focus
     padding-top: 9px
 //end custom select
 
+//start philosophy style
+.philosophy 
+    padding-top: 95px 
+    padding-bottom: 95px
+    .container-fluid 
+        width: 560px
+.philosophy
+    .section-header
+        display: flex
+        flex-direction: column
+        align-items: center
+        .h1 
+            text-align: center
+            margin-bottom: 28px
+            span 
+                transform: rotate(0)
+                width: auto
+                margin-left: 0
+                margin-top: 11px
+.themes-row
+    display: flex
+    align-items: center
+    justify-content: center
+.theme-item 
+    margin: 4px
+    background: #E1E1EA
+    border: 1px solid #CBCBD5
+    padding: 4px 12px
+    border-radius: 72px
+    color: $dark-2
+    font-weight: 700
+.philosophy__img 
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    margin-top: 36px 
+    margin-bottom: 53px
+    max-width: 100%
+//end philosophy style
 
+//start investments style
+.investments
+    padding-bottom: 100px
+    .container-fluid 
+        width: 1063px
+.logo-item 
+    width: 100%
+    background: #F0F0F5
+    height: 152px 
+    border-radius: 14px 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-top: 27px
+    img 
+        max-width: 80%
+.italic-text 
+    width: 654px 
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    text-align: center
+    font-size: 21px
+    color: $dark-4 
+    font-style: italic
+    line-height: 160%
+    margin-top: 27px
+//end investments style 
+
+//start form style
+.form 
+    width: 382px 
+    margin-left: auto 
+    margin-right: auto 
+    max-width: 100%
+    .button 
+        width: 230px 
+        max-width: 100% 
+        margin-left: auto 
+        margin-right: auto
+        display: flex 
+        justify-content: center
+        margin-top: 28px
+.input-wrapper 
+    width: 100%
+    margin-bottom: 15px
+.input
+    display: block 
+    width: 100%
+    border: none 
+    border-bottom: 1px solid rgba(#000, .2)
+    outline: none
+    padding: 9px 16px
+    color: #000
+.input-label 
+    font-size: 11px
+    padding-left: 16px
+    color: rgba(#000, 0.5)
+.contact-page
+    background: url('../img/map.svg')
+    background-repeat: no-repeat 
+    background-position: top 98px center
+
+//end form style 
+
+.privacy
+    .container-fluid 
+        width: 970px 
+    .main-screen__title 
+        margin-bottom: 16px
+    .h1 
+        text-align: left     
+    p 
+        margin-bottom: 24px
+        width: 548px 
+        max-width: 100%
+.h3
+    font-size: 34px 
+    font-family: $gabarito
+    font-weight: 700
+.back-btn
+    color: $dark-2
+    display: flex 
+    align-items: center
+    font-size: 16px 
+    font-weight: 600 
+    font-family: $gabarito
+    text-decoration: none 
+    color: $dark-2
+    img 
+        margin-right: 7.3px
+.back-btn:hover 
+    color: $dark-2
+
+//start apply form
+.apply-form
+    width: 100%
+    height: 780px
+    min-height: 100vh
+    background: #F0F0F5
+    padding: 20px 
+    padding-left: 50px
+    display: flex 
+    flex-direction: column 
+    justify-content: space-between
+    box-sizing: border-box
+    overflow: hidden
+    .bottom-link
+        color: $dark-1
+.apply-form__content 
+    background: #FFFFFF
+    position: absolute
+    top: 20px 
+    right: 20px
+    width: calc(100% - 404px)
+    min-height: calc(100vh - 40px)
+    border-radius: 16px
+    background-image: url('../img/map.svg')
+    background-repeat: no-repeat
+    background-size: 800px
+    background-position: top center
+    padding-bottom: 28px
+    display: flex 
+    align-items: center
+    justify-content: center
+    .h1 
+        margin-bottom: 24px
+    .section-header
+        padding-top: 44px
+        display: flex 
+        flex-direction: column 
+        align-items: center
+        width: 560px 
+        max-width: 100%
+        text-align: center
+        margin-left: auto 
+        margin-right: auto
+   
+//end apply form
 
 @import "media"
 
