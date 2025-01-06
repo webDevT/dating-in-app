@@ -14,89 +14,7 @@
 </head>
 <body>
 
-<style>
-	/* Контейнер слайдера */
-.slider-container {
-  position: relative;
-  width: 100%;
-  height: 40px; /* Для удобства размещения тултипа */
-  margin-top: 12px;
-}
 
-/* Слайдер */
-.slider {
-  width: 100%;
-  height: 5px;
-  background: #C8C8D3; /* Фон слайдера */
-  border-radius: 2.5px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Заполненная часть слайдера */
-.slider-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 5px;
-  background: #F55B47; /* Цвет заполненной части */
-  border-radius: 2.5px;
-  z-index: 0;
-}
-
-/* Бегунок */
-.slider-thumb {
-  width: 21px;
-  height: 21px;
-  background: #F55B47; /* Цвет бегунка */
-  border: 3px solid #F0F0F5;
-  border-radius: 50%;
-  position: absolute;
-  top: -8px; /* Чтобы бегунок не перекрывал слайдер */
-  cursor: pointer;
-  z-index: 2;
-}
-
-/* Тултип */
-.tooltip2 {
-  position: absolute;
-  bottom: -15px;
-  padding: 5px 10px;
-  background-color: #1E1E1F;
-  color: white;
-  border-radius: 11px;
-  font-size: 12px;
-  display: inline-block;
-  pointer-events: none;
-  min-width: 117px;
-  text-align: center;
-  font-size: 15px;
-}
-.slider-thumb::before {
-	content: '';
-	width: 7px;
-	height: 7px;
-	background: #fff;
-	border-radius: 50%;
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-}
-
-.tooltip2::after {
-  content: '';
-  position: absolute;
-  top: -9px;
-  left: 50%;
-  transform: rotate(180deg);
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #1E1E1F transparent transparent transparent;
-}
-</style>
 
 
 <!-- start top header -->
@@ -1476,84 +1394,79 @@ All Rights Reserved.    
 	
 	</script>
 	<script>
-	const slider = document.getElementById('slider');
-const sliderFill = document.getElementById('slider-fill');
-const sliderThumb = document.getElementById('slider-thumb');
-const tooltip = document.getElementById('tooltip2');
-
-// Устанавливаем начальное значение слайдера (например, 50%):
-const initialPercentage = 50; // Например, 50% от ширины слайдера
-
-// Функция для обновления слайдера
-function updateSlider(event) {
-  const sliderRect = slider.getBoundingClientRect();
-  const thumbWidth = sliderThumb.offsetWidth;
-  let newLeft = event.clientX - sliderRect.left - thumbWidth / 2;
-
-  // Ограничиваем слайдер в пределах контейнера
-  if (newLeft < 0) newLeft = 0;
-  if (newLeft > sliderRect.width - thumbWidth) newLeft = sliderRect.width - thumbWidth;
-
-  // Обновляем положение ползунка
-  sliderThumb.style.left = `${newLeft}px`;
-
-  // Обновляем цвет заполненной части слайдера
-  sliderFill.style.width = `${newLeft + thumbWidth / 2}px`;
-
-  // Вычисляем процентное значение
-  const percentage = (newLeft / sliderRect.width) * 100;
-  
-  // Преобразуем процент в значение пользователей (например, от 0 до 5000)
-  const value = Math.round((percentage / 100) * 5000); 
-
-  // Обновляем текст тултипа
-  tooltip.textContent = `${value.toLocaleString()} users`;
-
-  // Обновляем позицию тултипа
-  tooltip.style.left = `${newLeft + thumbWidth / 2 - tooltip.offsetWidth / 2}px`;
-}
-
-// Устанавливаем начальное положение слайдера
-function setInitialValue() {
-  const sliderRect = slider.getBoundingClientRect();
-  const thumbWidth = sliderThumb.offsetWidth;
-  const initialLeft = (initialPercentage / 100) * sliderRect.width - thumbWidth / 2;
-
-  // Обновляем положение ползунка
-  sliderThumb.style.left = `${initialLeft}px`;
-
-  // Обновляем заполненную часть слайдера
-  sliderFill.style.width = `${initialLeft + thumbWidth / 2}px`;
-
-  // Обновляем значение в тултипе
-  const value = Math.round((initialPercentage / 100) * 5000);
-  tooltip.textContent = `${value.toLocaleString()} users`;
-
-  // Обновляем позицию тултипа
-  tooltip.style.left = `${initialLeft + thumbWidth / 2 - tooltip.offsetWidth / 2}px`;
-}
-
-// Устанавливаем начальное значение слайдера при загрузке страницы
-window.addEventListener('load', setInitialValue);
-
-// Обработчики событий для перетаскивания
-sliderThumb.addEventListener('mousedown', (event) => {
-  event.preventDefault();
-  
-  // Начинаем перетаскивание
-  document.addEventListener('mousemove', updateSlider);
-  document.addEventListener('mouseup', () => {
-    document.removeEventListener('mousemove', updateSlider);
-  });
-});
-
-// Событие для клика на слайдере, чтобы мгновенно поставить бегунок на место
-slider.addEventListener('click', (event) => {
-  if (event.target !== sliderThumb) {
-    updateSlider(event);
-  }
-});
-
+		const slider = document.getElementById('slider');
+		const sliderFill = document.getElementById('slider-fill');
+		const sliderThumb = document.getElementById('slider-thumb');
+		const tooltip = document.getElementById('tooltip2');
+	  
+		const initialPercentage = 50;
+	  
+		// Функция для обновления положения слайдера
+		function updateSlider(event) {
+		  const sliderRect = slider.getBoundingClientRect();
+		  const thumbWidth = sliderThumb.offsetWidth;
+		  let clientX = event.type.startsWith('touch') ? event.touches[0].clientX : event.clientX;
+		  let newLeft = clientX - sliderRect.left - thumbWidth / 2;
+	  
+		  if (newLeft < 0) newLeft = 0;
+		  if (newLeft > sliderRect.width - thumbWidth) newLeft = sliderRect.width - thumbWidth;
+	  
+		  sliderThumb.style.left = `${newLeft}px`;
+		  sliderFill.style.width = `${newLeft + thumbWidth / 2}px`;
+	  
+		  const percentage = (newLeft / sliderRect.width) * 100;
+		  const value = Math.round((percentage / 100) * 5000);
+		  tooltip.textContent = `${value.toLocaleString()} users`;
+		  tooltip.style.left = `${newLeft + thumbWidth / 2 - tooltip.offsetWidth / 2}px`;
+		}
+	  
+		// Устанавливаем начальное значение слайдера
+		function setInitialValue() {
+		  const sliderRect = slider.getBoundingClientRect();
+		  const thumbWidth = sliderThumb.offsetWidth;
+		  const initialLeft = (initialPercentage / 100) * sliderRect.width - thumbWidth / 2;
+	  
+		  sliderThumb.style.left = `${initialLeft}px`;
+		  sliderFill.style.width = `${initialLeft + thumbWidth / 2}px`;
+	  
+		  const value = Math.round((initialPercentage / 100) * 5000);
+		  tooltip.textContent = `${value.toLocaleString()} users`;
+		  tooltip.style.left = `${initialLeft + thumbWidth / 2 - tooltip.offsetWidth / 2}px`;
+		}
+	  
+		// Устанавливаем начальное значение
+		window.addEventListener('load', setInitialValue);
+	  
+		// Функция для начала перетаскивания
+		function startDragging(event) {
+		  event.preventDefault();
+		  document.addEventListener(event.type.startsWith('touch') ? 'touchmove' : 'mousemove', updateSlider);
+		  document.addEventListener(event.type.startsWith('touch') ? 'touchend' : 'mouseup', stopDragging);
+		}
+	  
+		// Функция для завершения перетаскивания
+		function stopDragging(event) {
+		  document.removeEventListener(event.type.startsWith('touch') ? 'touchmove' : 'mousemove', updateSlider);
+		  document.removeEventListener(event.type.startsWith('touch') ? 'touchend' : 'mouseup', stopDragging);
+		}
+	  
+		// Добавляем события для перетаскивания
+		sliderThumb.addEventListener('mousedown', startDragging);
+		sliderThumb.addEventListener('touchstart', startDragging);
+	  
+		// Добавляем клик по слайдеру
+		slider.addEventListener('click', (event) => {
+		  if (event.target !== sliderThumb) {
+			updateSlider(event);
+		  }
+		});
+	  
+		// Добавляем touch-клик по слайдеру
+		slider.addEventListener('touchstart', (event) => {
+		  if (event.target !== sliderThumb) {
+			updateSlider(event);
+		  }
+		});
 	  </script>
 
 	  <script>
