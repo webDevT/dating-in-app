@@ -8,7 +8,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -31,7 +30,7 @@
 	<div class="container-fluid">
 
 		<div class="logo">
-			<a href="/">
+			<a href="index.html">
 				<img src="img/logo.svg" alt="">
 			</a>
 		</div>
@@ -51,26 +50,68 @@
 						<a href="" class="sub-item">About Us</a>
 
 						<div class="sub-menu">
-							<a href="">
+							<a href="about.html">
 								Our Philosophy
 							</a>
-							<a href="">
+							<!-- <a href="">
 								Our Mission
-							</a>
+							</a> -->
 						</div>
 
 					</li>
 
 					<li>
-						<a href="">Contact Us</a>
+						<a href="contact-us.html">Contact Us</a>
 					</li>
 
 				</ul>
+
+				
 			</div>
 
 			<a href="" class="button">
 				Get Started
 			</a>
+
+			<div class="apply-footer mobile-menu-footer">
+				<a href="" class="button">
+					Get Started
+				</a>
+				<div class="copy">
+					© 2025 Dating in Your App. <br>
+	All Rights Reserved.    
+				</div>
+	
+				<div class="footer-social">
+	
+					<a href="">
+						<img src="img/x-grey.svg" alt="">
+					</a>
+	
+					<a href="">
+						<img src="img/fb-grey.svg" alt="">
+					</a>
+	
+					<a href="">
+						<img src="img/youtube-grey.svg" alt="">
+					</a>
+	
+					<a href="">
+						<img src="img/inst-grey.svg" alt="">
+					</a>
+	
+				</div>
+	
+				<div class="bottom-footer-menu">
+					<a href="" class="bottom-link">
+						Privacy Policy
+					</a>
+					<a href="" class="bottom-link">
+						Terms of Use
+					</a>
+				</div>
+			
+		</div>
 
 		</div>
 
@@ -127,7 +168,7 @@ Think about it this way: in the real world, people don’t visit a special “ho
 					</div>
 				</div>
 
-				<img src="img/philosophy.png" alt="" class="philosophy__img">
+				<img src="img/philosophy.webp" alt="" class="philosophy__img">
 
 				<p>
 					Our vision is simple: users shouldn’t have to open your app specifically to date. But if they see someone interesting while using it, why not say hello?
@@ -360,147 +401,31 @@ All Rights Reserved.    
 <!-- end footer -->
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 	<script src="js/main.js"></script>
-	<script>
-		$('.slick-slider').slick({
-  infinite: true,
-  prevArrow: $('.prev'),
-  nextArrow: $('.next'),
-  dots: true,
-
-});
 	
-	</script>
 	<script>
-	const slider = document.getElementById('slider');
-const sliderFill = document.getElementById('slider-fill');
-const sliderThumb = document.getElementById('slider-thumb');
-const tooltip = document.getElementById('tooltip2');
 
-// Устанавливаем начальное значение слайдера (например, 50%):
-const initialPercentage = 50; // Например, 50% от ширины слайдера
-
-// Функция для обновления слайдера
-function updateSlider(event) {
-  const sliderRect = slider.getBoundingClientRect();
-  const thumbWidth = sliderThumb.offsetWidth;
-  let newLeft = event.clientX - sliderRect.left - thumbWidth / 2;
-
-  // Ограничиваем слайдер в пределах контейнера
-  if (newLeft < 0) newLeft = 0;
-  if (newLeft > sliderRect.width - thumbWidth) newLeft = sliderRect.width - thumbWidth;
-
-  // Обновляем положение ползунка
-  sliderThumb.style.left = `${newLeft}px`;
-
-  // Обновляем цвет заполненной части слайдера
-  sliderFill.style.width = `${newLeft + thumbWidth / 2}px`;
-
-  // Вычисляем процентное значение
-  const percentage = (newLeft / sliderRect.width) * 100;
-  
-  // Преобразуем процент в значение пользователей (например, от 0 до 5000)
-  const value = Math.round((percentage / 100) * 5000); 
-
-  // Обновляем текст тултипа
-  tooltip.textContent = `${value.toLocaleString()} users`;
-
-  // Обновляем позицию тултипа
-  tooltip.style.left = `${newLeft + thumbWidth / 2 - tooltip.offsetWidth / 2}px`;
-}
-
-// Устанавливаем начальное положение слайдера
-function setInitialValue() {
-  const sliderRect = slider.getBoundingClientRect();
-  const thumbWidth = sliderThumb.offsetWidth;
-  const initialLeft = (initialPercentage / 100) * sliderRect.width - thumbWidth / 2;
-
-  // Обновляем положение ползунка
-  sliderThumb.style.left = `${initialLeft}px`;
-
-  // Обновляем заполненную часть слайдера
-  sliderFill.style.width = `${initialLeft + thumbWidth / 2}px`;
-
-  // Обновляем значение в тултипе
-  const value = Math.round((initialPercentage / 100) * 5000);
-  tooltip.textContent = `${value.toLocaleString()} users`;
-
-  // Обновляем позицию тултипа
-  tooltip.style.left = `${initialLeft + thumbWidth / 2 - tooltip.offsetWidth / 2}px`;
-}
-
-// Устанавливаем начальное значение слайдера при загрузке страницы
-window.addEventListener('load', setInitialValue);
-
-// Обработчики событий для перетаскивания
-sliderThumb.addEventListener('mousedown', (event) => {
-  event.preventDefault();
-  
-  // Начинаем перетаскивание
-  document.addEventListener('mousemove', updateSlider);
-  document.addEventListener('mouseup', () => {
-    document.removeEventListener('mousemove', updateSlider);
-  });
-});
-
-// Событие для клика на слайдере, чтобы мгновенно поставить бегунок на место
-slider.addEventListener('click', (event) => {
-  if (event.target !== sliderThumb) {
-    updateSlider(event);
-  }
-});
-
-	  </script>
-
-	  <script>
-		// Находим все элементы с классом faq__item
-const faqItems = document.querySelectorAll('.faq-item');
-
-// Добавляем обработчик события на каждый элемент
-faqItems.forEach(item => {
-  item.addEventListener('click', () => {
-    item.classList.toggle('active'); // Добавляет или удаляет класс active
-  });
-});
-
-	  </script>
-
-	
-
-	<script>
-		// Находим элементы
 const dropdown = document.querySelector('.custom-dropdown');
 const selected = dropdown.querySelector('.dropdown-selected');
 const options = dropdown.querySelector('.dropdown-options');
 const optionItems = options.querySelectorAll('.dropdown-option');
 
-// Открытие/закрытие выпадающего списка
 selected.addEventListener('click', () => {
   const isVisible = options.style.display === 'block';
   options.style.display = isVisible ? 'none' : 'block';
 });
 
-// Обработка клика по элементу списка
 optionItems.forEach(option => {
   option.addEventListener('click', () => {
-    const value = option.dataset.value; // Получаем значение
-    const flagSrc = option.querySelector('img').src; // Получаем путь к изображению
-    const text = option.textContent.trim(); // Получаем текст (например, EN)
-
-    // Обновляем текст и флаг выбранного элемента
+    const value = option.dataset.value; 
+    const flagSrc = option.querySelector('img').src; 
+    const text = option.textContent.trim();
     selected.innerHTML = `<img src="${flagSrc}" alt="${text} Flag" class="dropdown-flag" /> ${text}`;
     selected.dataset.value = value;
-
-    // Закрываем выпадающий список
     options.style.display = 'none';
-
-    // Выводим выбранное значение (или используем для других целей)
-    console.log(`Вы выбрали: ${value}`);
   });
 });
-
-// Закрытие списка при клике вне его
 document.addEventListener('click', (event) => {
   if (!dropdown.contains(event.target)) {
     options.style.display = 'none';
