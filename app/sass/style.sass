@@ -11,6 +11,7 @@ body
     font-size: 17px
     font-weight: 500
     box-sizing: border-box
+    font-weight: 400
 .container-fluid
     width: 1140px 
     max-width: 91.467vw
@@ -184,7 +185,7 @@ button
 //start header style 
 .header 
     background: #fff 
-    transition: all 1s
+    transition: all .5s
     .container-fluid 
         border-bottom: 1px solid rgba(#000, .05)
         padding-top: 35px
@@ -192,7 +193,7 @@ button
         display: flex 
         justify-content: space-between
         align-items: center
-        transition: all .1s
+        transition: all .5s
 .header.sticky 
     position: fixed 
     top: 0 
@@ -222,6 +223,7 @@ button
         text-decoration: none
         display: flex 
         align-items: center
+        font-size: 15px
         img 
             margin-left: 10px
             display: block
@@ -251,7 +253,7 @@ button
     display: block
 .logo 
     position: relative
-    top: 3px
+    top: -1px
 .sub-item:after 
     content: ''
     width: 10px 
@@ -1133,7 +1135,24 @@ input[type="range"]:focus
     border-width: 5px
     border-style: solid
     border-color: #1E1E1F transparent transparent transparent
-
+.sub-title-wrapper
+    margin-bottom: 18px
+    .sub-title 
+        margin-bottom: 0
+.calculator-p 
+    margin-bottom: 3px
+p 
+    color: $dark-4
+    font-weight: 400
+.work-section
+    .image-wrapper 
+        img 
+            width: 327px
+.work--2
+    .image-wrapper 
+        img 
+            max-width: 90%
+            
 @import "media"
 
 

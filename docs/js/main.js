@@ -1,9 +1,9 @@
 //start close header
 const closeButton = document.querySelector('.close');
-const topHeader = document.querySelector('.top-header');
-closeButton.addEventListener('click', function () {
-  topHeader.style.display = 'none'; 
-});
+// const topHeader = document.querySelector('.top-header');
+// closeButton.addEventListener('click', function () {
+//   topHeader.style.display = 'none'; 
+// });
 //end close header
 
 //start mobile menu 
@@ -36,10 +36,10 @@ subItem.addEventListener('click', function (event) {
 let isManuallyClosed = false;
 
 // Скрываем topHeader при клике на .close
-closeButton.addEventListener('click', function () {
-  topHeader.style.display = 'none';
-  isManuallyClosed = true; // Устанавливаем флаг в true
-});
+// closeButton.addEventListener('click', function () {
+//   topHeader.style.display = 'none';
+//   isManuallyClosed = true; // Устанавливаем флаг в true
+// });
 
 // Обрабатываем логику показа/скрытия topHeader при клике на .menu-btn
 menuBtn.addEventListener('click', function () {
