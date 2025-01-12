@@ -148,28 +148,29 @@
 		</div>
 
 
-		<form action="" class="form">
+		<form action="send.php" method="POST" class="form">
 
 			<div class="input-wrapper">
-				<input type="text" placeholder="Name" class="input">
+				<input type="text" name="name" placeholder="Name" class="input" required>
 				<div class="input-label">What should we call you?</div>
 			</div>
-
+		
 			<div class="input-wrapper">
-				<input type="text" placeholder="Email" class="input">
+				<input type="email" name="email" placeholder="Email" class="input" required>
 				<div class="input-label">We’ll contact you here</div>
 			</div>
-
+		
 			<div class="input-wrapper">
-				<input type="text" placeholder="Message" class="input">
+				<textarea name="message" placeholder="Message" class="input" required></textarea>
 				<div class="input-label">What are you interested in?</div>
 			</div>
-
+		
 			<button class="button button--black">
 				Send
 			</button>
-			
+		
 		</form>
+		
 
 	</div>
 </section>
