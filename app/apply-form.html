@@ -39,33 +39,34 @@
 				</div>
 		
 		
-				<form action="" class="form">
-		
+				<form name="contact" method="POST" data-netlify="true" class="form" netlify-honeypot="bot-field">
+					<input type="hidden" name="form-name" value="contact">
+					
 					<div class="input-wrapper">
-						<input type="text" placeholder="Name" class="input">
+						<input type="text" name="name" placeholder="Name" class="input" required>
 						<div class="input-label">What should we call you?</div>
 					</div>
-		
+				
 					<div class="input-wrapper">
-						<input type="text" placeholder="Email" class="input">
+						<input type="email" name="email" placeholder="Email" class="input" required>
 						<div class="input-label">We’ll contact you here</div>
 					</div>
-		
+				
 					<div class="input-wrapper">
-						<input type="text" placeholder="App Link" class="input">
+						<input type="text" name="app-link" placeholder="App Link" class="input" required>
 						<div class="input-label">Share your app’s link so we can check it out</div>
 					</div>
-
+				
 					<div class="input-wrapper">
-						<input type="text" placeholder="Monthly Audience" class="input">
+						<input type="text" name="monthly-audience" placeholder="Monthly Audience" class="input" required>
 						<div class="input-label">How many users do you have?</div>
 					</div>
-		
-					<button class="button button--black">
+				
+					<button type="submit" class="button button--black">
 						Send
 					</button>
-					
 				</form>
+				
 		
 			
 		</section>
