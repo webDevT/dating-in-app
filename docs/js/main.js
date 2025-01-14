@@ -17,13 +17,13 @@ menuBtn.addEventListener('click', function () {
 
 //end mobile menu
 
-const subItem = document.querySelector('a.sub-item');
-const subMenu = document.querySelector('.sub-menu');
+// const subItem = document.querySelector('a.sub-item');
+// const subMenu = document.querySelector('.sub-menu');
 
-subItem.addEventListener('click', function (event) {
-  event.preventDefault(); 
-  subMenu.classList.toggle('active'); 
-});
+// subItem.addEventListener('click', function (event) {
+//   event.preventDefault(); 
+//   subMenu.classList.toggle('active'); 
+// });
 
 // Отслеживаем изменение состояния класса .active у .menu-wrapper
 
@@ -61,4 +61,11 @@ window.addEventListener('scroll', function () {
   } else {
     header.classList.remove('sticky'); // Убираем класс sticky, если страница вернулась в начало
   }
+});
+
+document.querySelectorAll('.menu ul li a').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.menu-btn').classList.remove('active');
+    document.querySelector('.menu-wrapper').classList.remove('active');
+  });
 });
