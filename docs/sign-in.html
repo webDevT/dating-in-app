@@ -81,11 +81,23 @@
 				
 			</div>
 
-			<a href="apply-form.html" class="button">
-				Get Started
+
+			<div class="header-buttons">
+				<a href="sign-in.html" class="button button--black">
+				Sign In
 			</a>
 
+			<a href="apply-form.html" class="button button--get-started">
+				Get Started
+			</a>
+			</div>
+			
+
 			<div class="apply-footer mobile-menu-footer">
+
+				<a href="sign-in.html" class="button button--black">
+					Sign In
+				</a>
 				<a href="apply-form.html" class="button">
 					Get Started
 				</a>
@@ -150,39 +162,48 @@
 		</div>
 
 
-		<form action="" class="form">
+		<form action="" class="form" id="loginForm">
 
 			<div class="input-wrapper">
-				<input type="text" placeholder="Email Address" class="input">
+				<input type="email" placeholder="Email Address" class="input" id="email" required>
 				<div class="input-label">Enter your email</div>
 			</div>
-
+		
 			<div class="input-wrapper">
-				<input type="text" placeholder="Password" class="input">
+				<input type="password" placeholder="Password" class="input" id="password" required>
 				<div class="input-label">Enter your password</div>
 			</div>
 			<a href="password-recovery.html" class="forgot-password-link">Forgot your password?</a>
-			
-			
-
-
-
-			<button class="button button--black">
-				Sign In 
+		
+			<button type="submit" class="button button--black">
+				Sign In
 			</button>
-			<a href="apply-form.html" class="text-center mt-3 d-block apply-link">Don’t have an account yet?</a>
+			
+			<div class="error-message" id="errorMessage" style="display: none;">
 
+			
+				<p class="text-center mt-3">
+					<span style="color: red;">	Oops! Looks like we couldn’t log you in. Please ensure your email and password are correct.
+						New here? Let’s get you started with an account!</span>
+					
+				</p>
+			</div>
+
+			<p class="text-center mt-3">
+			
+				<a href="apply-form.html" class="apply-link">Create a new account</a>.
+			</p>
+		
 			<p class="text-center mt-5">
 				Your credentials are securely stored, and we prioritize your privacy and data protection. If you encounter any issues, please contact us at email.example@gmail.com.
 			</p>
 			
 		</form>
+		
 
 	</div>
 </section>
 <!-- end Philosophy section -->
-
-
 
 <!-- start footer -->
 <footer class="footer">
@@ -190,7 +211,7 @@
 
 		<div class="footer__col footer__col--bottom">
 			<a href="" class="footer__logo">
-				<img src="img/logo-footer.svg" alt="">
+				<img src="img/logo-footer.svg" alt="logo">
 			</a>
 
 			<div class="copy">
@@ -198,25 +219,25 @@
 All Rights Reserved.    
 			</div>
 
-			<div class="footer-social">
+			<!-- <div class="footer-social">
 
 				<a href="">
-					<img src="img/x.svg" alt="">
+					<img src="img/x.svg" alt="x icon">
 				</a>
 
 				<a href="">
-					<img src="img/fb.svg" alt="">
+					<img src="img/fb.svg" alt="facebook icon">
 				</a>
 
 				<a href="">
-					<img src="img/youtube.svg" alt="">
+					<img src="img/youtube.svg" alt="youtube icon">
 				</a>
 
 				<a href="">
-					<img src="img/inst.svg" alt="">
+					<img src="img/inst.svg" alt="instagram icon">
 				</a>
 
-			</div>
+			</div> -->
 
 			<div class="bottom-footer-menu">
 				<a href="privacy-policy.html" class="bottom-link">
@@ -226,12 +247,14 @@ All Rights Reserved.    
 					Terms of Use
 				</a>
 			</div>
+
+
 		</div>
 
 		<div class="footer__col footer__col--menu">
 			<div class="footer-menu">
 
-				<div class="footer-menu__col">
+				<!-- <div class="footer-menu__col">
 					<div class="footer-menu__title">
 						For anyone
 					</div>
@@ -255,7 +278,7 @@ All Rights Reserved.    
 					<a href="" class="footer-menu__link">
 						Wallpapers
 					</a>
-				</div>
+				</div> -->
 
 				<div class="footer-menu__col">
 					<div class="footer-menu__title">
@@ -263,6 +286,10 @@ All Rights Reserved.    
 					</div>
 
 					<a href="" class="footer-menu__link">
+						FAQ
+					</a>
+
+					<!-- <a href="" class="footer-menu__link">
 						Press & Blog
 					</a>
 
@@ -280,7 +307,7 @@ All Rights Reserved.    
 
 					<a href="" class="footer-menu__link">
 						Tax Resources
-					</a>
+					</a> -->
 				</div>
 
 				<div class="footer-menu__col">
@@ -288,19 +315,19 @@ All Rights Reserved.    
 						Company
 					</div>
 
-					<a href="" class="footer-menu__link">
+					<!-- <a href="" class="footer-menu__link">
 						Support
-					</a>
+					</a> -->
 
-					<a href="" class="footer-menu__link">
+					<a href="about.html" class="footer-menu__link">
 						About Us
 					</a>
 
-					<a href="" class="footer-menu__link">
+					<a href="contact-us.html" class="footer-menu__link">
 						Contact Us
 					</a>
 
-					<a href="" class="footer-menu__link">
+					<a href="about.html" class="footer-menu__link">
 						Our Mission
 					</a>
 
@@ -321,41 +348,33 @@ All Rights Reserved.    
 					<img src="img/en.svg" alt="EN Flag" class="dropdown-flag" />
 					EN
 				  </li>
-				  <li class="dropdown-option" data-value="ru">
+				  <!-- <li class="dropdown-option" data-value="ru">
 					<img src="img/en.svg" alt="RU Flag" class="dropdown-flag" />
 					RU
 				  </li>
 				  <li class="dropdown-option" data-value="fr">
 					<img src="img/en.svg" alt="ESP Flag" class="dropdown-flag" />
 					ESP
-				  </li>
+				  </li> -->
 				  
 				</ul>
-			  </div>
-			  
-
-			  
-			  
+			  </div>			  		  			  
 		</div>
 
 		<div class="footer__col footer__col--buttons">
 			<div class="footer-buttons">
-				<a href="" class="footer__link">
+				<a href="sign-in.html" class="footer__link">
 					Sign In
 				</a>
-				<a href="" class="footer__link footer__link--white">
+				<a href="apply-form.html" class="footer__link footer__link--white">
 					Get Started
 				</a>
 			</div>
 		</div>
-
-		
-
-
-
 	</div>
 </footer>
 <!-- end footer -->
+
 <script src="js/jquery.min.js"></script>
 
 	<script src="js/main.js"></script>
@@ -386,6 +405,26 @@ document.addEventListener('click', (event) => {
   if (!dropdown.contains(event.target)) {
     options.style.display = 'none';
   }
+});
+
+	</script>
+
+	<script>
+		document.getElementById('loginForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Получаем введенные значения
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    // Условие для проверки (в реальном приложении здесь должна быть проверка на сервере)
+    if (!email || !password || email !== 'user@example.com' || password !== 'password123') {
+        // Показываем сообщение об ошибке
+        document.getElementById('errorMessage').style.display = 'block';
+    } else {
+        // Если все верно (например, переадресация)
+        window.location.href = 'dashboard.html';
+    }
 });
 
 	</script>
